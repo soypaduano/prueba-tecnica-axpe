@@ -17,7 +17,6 @@ class RegisteredUser {
         this.registration = '12-02-2022'
         this.adult = true;
     }
-
     
     getTotal(){
         //Movemos la lógica al servicio, ya que el calculo de precio pertenece al servicio.

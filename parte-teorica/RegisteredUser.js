@@ -35,8 +35,7 @@ class Service {
     }
 
     getTotalOfUser(userId){
-        //let multimediaContent = this.getMultimediaContent(userId); //Esto devuelve todos el contenido que tiene el usuario
-        let multimediaContent = [10, 20, 30, 1, 2, 5, 6, 78, 10, 1, 0, 0]; 
+        let multimediaContent = this.getMultimediaContent(userId); //Esto devuelve todos el contenido que tiene el usuario
         const total = multimediaContent.reduce((partialSum, content) => {
             /*
                 Con esto evitamos el if/else -> Todos los contenidos tienen un precio, sin importar su tipo (puede ser 0)
@@ -47,7 +46,6 @@ class Service {
 
         return total;
     }
-    getTotalOfUser()
 }
 
 /* 

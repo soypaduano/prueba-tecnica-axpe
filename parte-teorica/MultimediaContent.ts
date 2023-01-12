@@ -31,6 +31,7 @@ class MultimediaContentPodcast implements MultimediaContent {
     duration: number;
     adult: boolean;
     size: number;
+    author: string;
     additionalFee: number;
 }
 
